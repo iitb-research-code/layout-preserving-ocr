@@ -1,0 +1,20 @@
+LABEL_CATALOG:
+  PubLayNet:
+    0: Text
+    1: Title
+    2: List
+    3: Table
+    4: Figure
+  Sanskrit_Finetuned:
+    0: bg
+    1: Image
+    2: Math
+    3: Table
+    4: Text
+WEIGHT_CATALOG:
+  Sanskrit_PubLayNet_faster_rcnn: https://www.dropbox.com/s/qb1d4edsh9oa50c/model_faster_publayout_comb.pth?dl=1
+MODEL_CATALOG:
+  PubLayNet_faster_rcnn: PubLayNet_faster_rcnn_R_50_FPN_3x.yml
+
+
+
