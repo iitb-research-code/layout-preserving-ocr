@@ -50,8 +50,8 @@ import yaml
 from detectron2.data.datasets import register_coco_instances
 
 
-tessdata_dir_config = r'--tessdata-dir "indic-parser/configs/tessdata"'
-os.environ["TESSDATA_PREFIX"] = 'indic-parser/configs/tessdata'
+tessdata_dir_config = r'--tessdata-dir "configs/tessdata"'
+os.environ["TESSDATA_PREFIX"] = 'configs/tessdata'
 languages=pytesseract.get_languages(config=tessdata_dir_config)
 
 input_lang='san_iitb'
@@ -305,6 +305,6 @@ def get_layout_data(input_image_path):
   return header
 
 if __name__ == "__main__":
-  img_path = "/content/indic-parser/test_img/7.jpeg"
+  img_path = "test_img/7.jpeg"
   output = get_layout_data(img_path)
   print(output)
